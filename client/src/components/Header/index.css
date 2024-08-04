@@ -1,0 +1,22 @@
+.nav-content{
+    display:flex;
+    flex-direction:row;
+    background-color:#68accc;
+    padding:10px;
+    justify-content:space-between;
+    align-items:center;
+}
+.website-logo{
+    width:120px;
+    border-radius:10%;
+    height:60px;
+}
+.logout-desktop-btn{
+    padding:5px;
+    background-color:blue;
+    border:none;
+    color:#ffffff;
+    border-radius:8px;
+    padding-left:10px;
+    padding-right:10px;
+}

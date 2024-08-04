@@ -1,0 +1,39 @@
+.listing{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    padding:30px;
+}
+.pahead1{
+    width:30%;
+}
+.pahead2I{
+    border:none;
+    background-color:green;
+    color:white;
+    padding-left:8px;
+    padding-right:8px;
+    border-radius:8px;
+    padding:5px;
+}
+
+.pahead2{
+    border:none;
+    background-color:rgb(69, 32, 201);
+    color:white;
+    padding-left:8px;
+    padding-right:8px;
+    border-radius:8px;
+    padding:5px;
+}
+.pahead3{
+    border:none;
+    background-color:rgb(231, 63, 100);
+    color:white;
+    padding:5px;
+    padding-left:8px;
+    padding-right:8px;
+    border-radius:8px;
+}
+   
