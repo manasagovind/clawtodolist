@@ -36,13 +36,14 @@ const LoginForm=()=>{
         event.preventDefault()
         try {
             const body={username,password}
-            const response=await fetch("http://localhost:4000/login",{
+            const response=await fetch("https://clawbackend-pfvm.onrender.com/login",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"
                 },
                 body:JSON.stringify(body),
             })
+            console.log(response.ok)
             const data=await response.json()
             if (response.ok === true) {
                 onSubmitSuccess(data.jwtToken)
@@ -79,7 +80,7 @@ const LoginForm=()=>{
           value={username}
           onChange={e=>setUsername(e.target.value)}
         />
-      </div>
+                        </div>
       <div className="inputCont">
           <label className="input-label" htmlFor="password">
             PASSWORD

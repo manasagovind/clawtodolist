@@ -12,7 +12,7 @@ const ListTodo=()=>{
     const getTodos=async()=>{
         const jwtToken = Cookies.get('jwt_token')
 
-        const response=await fetch("http://localhost:4000/todos",{
+        const response=await fetch("https://clawbackend-pfvm.onrender.com/todos",{
             method:"GET",
             headers: {
                 Authorization: `Bearer ${jwtToken}`,
@@ -32,11 +32,11 @@ const ListTodo=()=>{
     return(
         <Fragment>
             <h1 className="head">List of Todos</h1>
-            <ol className="unOrder">
+            <ul className="unOrder">
                 
                 {todos.map(each=>(<EachTodo each={each} key={each.todo_id}/>))}
 
-            </ol>
+            </ul>
         </Fragment>
     )
 

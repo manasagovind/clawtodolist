@@ -16,7 +16,7 @@ const EachTodo=(props)=>{
         const body={description:descri}
         const jwtToken = Cookies.get('jwt_token')
 
-        const response=await fetch(`http://localhost:4000/todos/${todo_id}`,{
+        const response=await fetch(`https://clawbackend-pfvm.onrender.com/todos/${todo_id}`,{
             method:"PUT",
             headers:{
                 "Content-Type":"application/json",
@@ -32,14 +32,14 @@ const EachTodo=(props)=>{
     const DeleteForm=async ()=>{
         const jwtToken = Cookies.get('jwt_token')
 
-        const deleteTodo=await fetch(`http://localhost:4000/todos/${todo_id}`,{
+        const deleteTodo=await fetch(`https://clawbackend-pfvm.onrender.com/todos/${todo_id}`,{
             method:"DELETE",
             headers: {
                 Authorization: `Bearer ${jwtToken}`,
               }
         });
         console.log(deleteTodo)
-        window.location="/0"
+        window.location="/"
     }
 
     return(

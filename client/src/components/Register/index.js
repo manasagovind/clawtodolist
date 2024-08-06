@@ -37,7 +37,7 @@ const Register=()=>{
         event.preventDefault()
         try {
             const body={username,name,password}
-            const response=await fetch("http://localhost:4000/users",{
+            const response=await fetch("https://clawbackend-pfvm.onrender.com/users",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"
